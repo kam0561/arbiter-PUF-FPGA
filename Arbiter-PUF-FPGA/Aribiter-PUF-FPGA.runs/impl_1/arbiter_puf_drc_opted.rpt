@@ -1,0 +1,448 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Jul  4 15:36:56 2025
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_drc -file arbiter_puf_drc_opted.rpt -pb arbiter_puf_drc_opted.pb -rpx arbiter_puf_drc_opted.rpx
+| Design       : arbiter_puf
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_arbiter_puf
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 68
++-------------+------------------+-------------------------------------------------------------+------------+
+| Rule        | Severity         | Description                                                 | Violations |
++-------------+------------------+-------------------------------------------------------------+------------+
+| NSTD-1      | Critical Warning | Unspecified I/O Standard                                    | 1          |
+| UCIO-1      | Critical Warning | Unconstrained Logical Port                                  | 1          |
+| IOCNT-1     | Warning          | Number of IOs                                               | 1          |
+| PLHOLDVIO-2 | Warning          | Non-Optimal connections which could lead to hold violations | 64         |
+| ZPS7-1      | Warning          | PS7 block required                                          | 1          |
++-------------+------------------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+130 out of 130 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: a, b, c[63:0], response[63:0].
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+130 out of 130 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: a, b, c[63:0], response[63:0].
+Related violations: <none>
+
+IOCNT-1#1 Warning
+Number of IOs  
+The design contains 130 unplaced I/O ports while the target device, xc7z020clg400-1, has 125 remaining available user I/O pins. This DRC assumes that all ports which do not drive MGT pins should be placed on user I/O pins. To correct this issue:
+1. Ensure you are targeting the correct device and package. Select a larger device or different package if necessary.
+2. Check the top-level ports of the design to ensure the correct number of ports are specified.
+3. Consider design changes to reduce the number of user I/O pins needed.
+
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[0].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[0].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[10].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[10].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[11].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[11].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#4 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[12].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[12].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#5 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[13].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[13].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#6 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[14].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[14].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#7 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[15].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[15].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#8 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[16].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[16].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#9 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[17].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[17].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#10 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[18].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[18].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#11 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[19].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[19].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#12 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[1].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[1].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#13 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[20].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[20].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#14 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[21].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[21].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#15 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[22].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[22].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#16 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[23].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[23].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#17 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[24].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[24].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#18 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[25].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[25].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#19 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[26].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[26].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#20 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[27].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[27].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#21 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[28].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[28].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#22 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[29].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[29].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#23 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[2].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[2].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#24 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[30].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[30].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#25 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[31].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[31].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#26 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[32].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[32].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#27 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[33].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[33].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#28 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[34].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[34].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#29 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[35].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[35].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#30 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[36].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[36].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#31 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[37].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[37].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#32 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[38].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[38].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#33 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[39].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[39].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#34 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[3].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[3].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#35 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[40].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[40].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#36 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[41].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[41].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#37 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[42].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[42].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#38 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[43].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[43].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#39 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[44].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[44].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#40 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[45].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[45].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#41 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[46].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[46].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#42 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[47].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[47].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#43 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[48].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[48].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#44 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[49].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[49].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#45 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[4].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[4].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#46 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[50].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[50].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#47 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[51].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[51].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#48 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[52].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[52].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#49 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[53].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[53].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#50 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[54].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[54].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#51 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[55].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[55].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#52 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[56].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[56].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#53 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[57].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[57].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#54 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[58].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[58].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#55 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[59].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[59].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#56 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[5].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[5].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#57 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[60].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[60].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#58 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[61].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[61].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#59 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[62].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[62].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#60 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[63].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[63].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#61 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[6].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[6].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#62 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[7].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[7].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#63 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[8].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[8].arbiterinst/d0/q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#64 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[9].arbiterinst/genblk1[63].arbelinst/o2_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[9].arbiterinst/d0/q_reg
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

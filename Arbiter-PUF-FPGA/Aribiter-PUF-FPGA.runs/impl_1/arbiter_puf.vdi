@@ -1,0 +1,331 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jul  4 15:36:33 2025
+# Process ID: 13672
+# Current directory: C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/Arbiter-PUF-FPGA/Aribiter-PUF-FPGA.runs/impl_1
+# Command line: vivado.exe -log arbiter_puf.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source arbiter_puf.tcl -notrace
+# Log file: C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/Arbiter-PUF-FPGA/Aribiter-PUF-FPGA.runs/impl_1/arbiter_puf.vdi
+# Journal file: C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/Arbiter-PUF-FPGA/Aribiter-PUF-FPGA.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source arbiter_puf.tcl -notrace
+Command: open_checkpoint C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/Arbiter-PUF-FPGA/Aribiter-PUF-FPGA.runs/impl_1/arbiter_puf.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1111.980 ; gain = 0.000
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1111.980 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1111.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2020.2 (64-bit) build 3064766
+open_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1111.980 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.680 . Memory (MB): peak = 1111.980 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 110c012ee
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1586.773 ; gain = 474.793
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 110c012ee
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.227 . Memory (MB): peak = 1796.684 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 110c012ee
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.248 . Memory (MB): peak = 1796.684 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 110c012ee
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.336 . Memory (MB): peak = 1796.684 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 110c012ee
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.412 . Memory (MB): peak = 1796.684 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 110c012ee
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.427 . Memory (MB): peak = 1796.684 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 110c012ee
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.443 . Memory (MB): peak = 1796.684 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1796.684 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 110c012ee
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.459 . Memory (MB): peak = 1796.684 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 110c012ee
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1796.684 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 110c012ee
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.684 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1796.684 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 110c012ee
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1796.684 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1796.684 ; gain = 684.703
+INFO: [Common 17-1381] The checkpoint 'C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/Arbiter-PUF-FPGA/Aribiter-PUF-FPGA.runs/impl_1/arbiter_puf_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file arbiter_puf_drc_opted.rpt -pb arbiter_puf_drc_opted.pb -rpx arbiter_puf_drc_opted.rpx
+Command: report_drc -file arbiter_puf_drc_opted.rpt -pb arbiter_puf_drc_opted.pb -rpx arbiter_puf_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AB/xilinxvivado/Vivado/2020.2/data/ip'.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/Arbiter-PUF-FPGA/Aribiter-PUF-FPGA.runs/impl_1/arbiter_puf_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1846.922 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: decf9db7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1846.922 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1846.922 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-568] A LUT 'genblk1[40].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[40].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[41].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[41].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[44].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[44].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[42].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[42].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[43].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[43].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[45].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[45].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[46].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[46].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[47].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[47].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[48].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[48].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[4].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[4].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[49].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[49].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[50].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[50].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[51].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[51].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[52].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[52].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[53].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[53].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[56].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[56].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[54].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[54].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[55].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[55].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[57].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[57].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[58].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[58].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[60].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[60].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[5].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[5].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[59].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[59].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[61].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[61].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[62].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[62].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[6].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[6].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[7].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[7].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[8].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[8].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[15].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[15].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[16].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[16].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[21].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[21].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[22].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[22].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[23].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[23].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[9].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[9].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[63].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[63].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[0].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[0].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[19].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[19].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[20].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[20].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[10].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[10].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[11].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[11].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[12].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[12].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[14].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[14].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[13].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[13].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[1].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[1].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[17].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[17].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[18].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[18].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[24].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[24].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[25].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[25].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[26].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[26].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[27].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[27].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[28].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[28].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[2].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[2].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[29].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[29].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[30].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[30].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[31].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[31].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[32].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[32].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[33].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[33].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[34].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[34].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[35].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[35].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[36].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[36].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[37].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[37].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[39].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[39].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[38].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[38].arbiterinst/d0/q_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[3].arbiterinst/genblk1[63].arbelinst/o2_INST_0' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[3].arbiterinst/d0/q_reg {FDRE}
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (130) is greater than number of available sites (125).
+The following are banks with available pins: 
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |    25 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    50 |     0 |                                                                        |                                          |        |        |        |     |
+| 35 |    50 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   125 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: decf9db7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.679 . Memory (MB): peak = 1846.922 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: decf9db7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.679 . Memory (MB): peak = 1846.922 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: decf9db7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.681 . Memory (MB): peak = 1846.922 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+39 Infos, 64 Warnings, 0 Critical Warnings and 4 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  4 15:36:58 2025...
