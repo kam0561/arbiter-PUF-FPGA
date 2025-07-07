@@ -1,6 +1,6 @@
 
 
 /***************************** Include Files *******************************/
-#include "arbiter-puf-fpga.h"
+#include "arbiter_puf_fpga.h"
 
 /************************** Function Definitions ***************************/

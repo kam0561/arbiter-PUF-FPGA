@@ -1,7 +1,7 @@
 
 `timescale 1 ns / 1 ps
 
-	module arbiter-puf-fpga_v1_0_S00_AXI #
+	module arbiter_puf_fpga_v1_0_S00_AXI #
 	(
 		// Users to add parameters here
 
