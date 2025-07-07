@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER arbiter-puf-fpga
+	OPTION supported_peripherals = (arbiter-puf-fpga);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = arbiter-puf-fpga;
+END DRIVER
