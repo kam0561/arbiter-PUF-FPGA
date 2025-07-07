@@ -70,7 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param synth.incrementalSynthesisCache C:/Users/kunwa/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-19576-MSI/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/kunwa/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-16744-MSI/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -83,6 +83,12 @@ set_property webtalk.parent_dir C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/Arb
 set_property parent.project_path C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/Arbiter-PUF-FPGA/Aribiter-PUF-FPGA.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_repo_paths {
+  c:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/ip_repo/arbiter_puf_fpga_1.0
+  c:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/ip_repo/arbiter_puf_fpga_1.0
+  c:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/ip_repo/arbiter-puf-fpga_1.0
+} [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/Arbiter-PUF-FPGA/Aribiter-PUF-FPGA.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }

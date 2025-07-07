@@ -6,7 +6,7 @@
 <Project Version="7" Minor="54" Path="c:/ab/xilinxvivado/projects/arbiter-puf-fpga/ip_repo/edit_arbiter_puf_fpga_v1_0.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="a33c9387f8224acc8009e7a9afddb876"/>
+    <Option Name="Id" Val="afbac9af5e3a4c2ea83c1c3d44c3b03e"/>
     <Option Name="Part" Val="xc7z020clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -35,6 +35,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../AB/xilinxvivado/projects/arbiter-PUF-FPGA/ip_repo/arbiter_puf_fpga_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../AB/xilinxvivado/projects/arbiter-PUF-FPGA/ip_repo/arbiter_puf_fpga_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../AB/xilinxvivado/projects/arbiter-PUF-FPGA/ip_repo/arbiter-puf-fpga_1.0"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
@@ -75,9 +76,44 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../../../../../AB/xilinxvivado/projects/arbiter-PUF-FPGA/ip_repo/arbiter_puf_fpga_1.0/src/arbel.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../AB/xilinxvivado/projects/arbiter-PUF-FPGA/ip_repo/arbiter_puf_fpga_1.0/src/arbiter.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../AB/xilinxvivado/projects/arbiter-PUF-FPGA/ip_repo/arbiter_puf_fpga_1.0/src/arbiter_puf.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/../../../../../AB/xilinxvivado/projects/arbiter-PUF-FPGA/ip_repo/arbiter_puf_fpga_1.0/hdl/arbiter_puf_fpga_v1_0_S00_AXI.v">
         <FileInfo>
           <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../AB/xilinxvivado/projects/arbiter-PUF-FPGA/ip_repo/arbiter_puf_fpga_1.0/src/dff.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../AB/xilinxvivado/projects/arbiter-PUF-FPGA/ip_repo/arbiter_puf_fpga_1.0/src/mux.v">
+        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

@@ -530,6 +530,68 @@
 	end    
 
 	// Add user logic here
+    // ----------------------------------------------------------------------------
+// AXI-PUF Interface (Final Step 9 Integration)
+// ----------------------------------------------------------------------------
+
+wire [63:0] challenge_input = {slv_reg1, slv_reg0};
+wire [63:0] puf_response;
+
+// ----------------------------------------------------------------------------
+// Detect when challenge is written (slv_reg0 or slv_reg1)
+// ----------------------------------------------------------------------------
+reg challenge_updated;
+always @(posedge S_AXI_ACLK) begin
+    if (!S_AXI_ARESETN)
+        challenge_updated <= 0;
+    else if (slv_reg_wren && (axi_awaddr[5:2] == 0 || axi_awaddr[5:2] == 1))
+        challenge_updated <= 1;
+    else
+        challenge_updated <= 0;
+end
+
+// ----------------------------------------------------------------------------
+// Start pulse for PUF
+// ----------------------------------------------------------------------------
+reg start_pulse;
+always @(posedge S_AXI_ACLK)
+    start_pulse <= challenge_updated;
+
+// ----------------------------------------------------------------------------
+// Arbiter PUF Instantiation
+// ----------------------------------------------------------------------------
+arbiter_puf u_puf (
+    .a(start_pulse),
+    .b(1'b0),
+    .c(challenge_input),
+    .response(puf_response)
+);
+
+// ----------------------------------------------------------------------------
+// Delay response by 2 cycles for stability
+// ----------------------------------------------------------------------------
+reg [1:0] response_delay;
+always @(posedge S_AXI_ACLK) begin
+    if (!S_AXI_ARESETN)
+        response_delay <= 0;
+    else
+        response_delay <= {response_delay[0], challenge_updated};
+end
+
+// ----------------------------------------------------------------------------
+// Latch response into AXI slave regs
+// ----------------------------------------------------------------------------
+always @(posedge S_AXI_ACLK) begin
+    if (!S_AXI_ARESETN) begin
+        slv_reg3 <= 0;
+        slv_reg4 <= 0;
+        slv_reg5 <= 0;
+    end else if (response_delay[1]) begin
+        slv_reg3 <= puf_response[31:0];
+        slv_reg4 <= puf_response[63:32];
+        slv_reg5 <= 32'h1; // Done flag
+    end
+end
 
 	// User logic ends
 
