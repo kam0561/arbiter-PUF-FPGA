@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Jul  7 17:08:28 2025
-# Process ID: 8144
+# Start of session at: Tue Jul  8 16:13:00 2025
+# Process ID: 6568
 # Current directory: C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/Arbiter-PUF-FPGA/Aribiter-PUF-FPGA.runs/synth_1
 # Command line: vivado.exe -log design_2_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_wrapper.tcl
 # Log file: C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/Arbiter-PUF-FPGA/Aribiter-PUF-FPGA.runs/synth_1/design_2_wrapper.vds

@@ -7,14 +7,14 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2 ||
 # IP: bd/design_2/ip/design_2_processing_system7_0_0/design_2_processing_system7_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_processing_system7_0_0 || ORIG_REF_NAME==design_2_processing_system7_0_0} -quiet] -quiet
 
-# IP: bd/design_2/ip/design_2_arbiter_puf_fpga_0_0/design_2_arbiter_puf_fpga_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_arbiter_puf_fpga_0_0 || ORIG_REF_NAME==design_2_arbiter_puf_fpga_0_0} -quiet] -quiet
-
 # IP: bd/design_2/ip/design_2_ps7_0_axi_periph_0/design_2_ps7_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_ps7_0_axi_periph_0 || ORIG_REF_NAME==design_2_ps7_0_axi_periph_0} -quiet] -quiet
 
 # IP: bd/design_2/ip/design_2_rst_ps7_0_50M_0/design_2_rst_ps7_0_50M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_rst_ps7_0_50M_0 || ORIG_REF_NAME==design_2_rst_ps7_0_50M_0} -quiet] -quiet
+
+# IP: bd/design_2/ip/design_2_arbiter_puf_fpga_0_0/design_2_arbiter_puf_fpga_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_arbiter_puf_fpga_0_0 || ORIG_REF_NAME==design_2_arbiter_puf_fpga_0_0} -quiet] -quiet
 
 # IP: bd/design_2/ip/design_2_auto_pc_0/design_2_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_2_auto_pc_0 || ORIG_REF_NAME==design_2_auto_pc_0} -quiet] -quiet

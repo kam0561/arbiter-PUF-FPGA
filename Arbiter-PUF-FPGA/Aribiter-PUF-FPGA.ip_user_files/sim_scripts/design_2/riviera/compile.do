@@ -58,9 +58,6 @@ vlog -work processing_system7_vip_v1_0_10  -sv2k12 "+incdir+../../../../Aribiter
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/34f8/hdl" "+incdir+C:/AB/xilinxvivado/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../bd/design_2/ip/design_2_processing_system7_0_0/sim/design_2_processing_system7_0_0.v" \
-"../../../bd/design_2/ipshared/7b62/hdl/arbiter_puf_fpga_v1_0_S00_AXI.v" \
-"../../../bd/design_2/ipshared/7b62/hdl/arbiter_puf_fpga_v1_0.v" \
-"../../../bd/design_2/ip/design_2_arbiter_puf_fpga_0_0/sim/design_2_arbiter_puf_fpga_0_0.v" \
 
 vcom -work lib_cdc_v1_0_2 -93 \
 "../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
@@ -70,6 +67,12 @@ vcom -work proc_sys_reset_v5_0_13 -93 \
 
 vcom -work xil_defaultlib -93 \
 "../../../bd/design_2/ip/design_2_rst_ps7_0_50M_0/sim/design_2_rst_ps7_0_50M_0.vhd" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/34f8/hdl" "+incdir+C:/AB/xilinxvivado/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../bd/design_2/ipshared/6b3d/hdl/arbiter_puf_fpga_v1_0_S00_AXI.v" \
+"../../../bd/design_2/ipshared/6b3d/hdl/arbiter_puf_fpga_v1_0.v" \
+"../../../bd/design_2/ip/design_2_arbiter_puf_fpga_0_0/sim/design_2_arbiter_puf_fpga_0_0.v" \
+"../../../bd/design_2/sim/design_2.v" \
 
 vlog -work generic_baseblocks_v2_1_0  -v2k5 "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/34f8/hdl" "+incdir+C:/AB/xilinxvivado/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
@@ -94,7 +97,6 @@ vlog -work axi_protocol_converter_v2_1_22  -v2k5 "+incdir+../../../../Aribiter-P
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/34f8/hdl" "+incdir+C:/AB/xilinxvivado/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../bd/design_2/ip/design_2_auto_pc_0/sim/design_2_auto_pc_0.v" \
-"../../../bd/design_2/sim/design_2.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

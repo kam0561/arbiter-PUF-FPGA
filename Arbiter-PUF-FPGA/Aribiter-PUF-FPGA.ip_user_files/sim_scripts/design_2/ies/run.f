@@ -27,9 +27,6 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_2/ip/design_2_processing_system7_0_0/sim/design_2_processing_system7_0_0.v" \
-  "../../../bd/design_2/ipshared/7b62/hdl/arbiter_puf_fpga_v1_0_S00_AXI.v" \
-  "../../../bd/design_2/ipshared/7b62/hdl/arbiter_puf_fpga_v1_0.v" \
-  "../../../bd/design_2/ip/design_2_arbiter_puf_fpga_0_0/sim/design_2_arbiter_puf_fpga_0_0.v" \
 -endlib
 -makelib ies_lib/lib_cdc_v1_0_2 \
   "../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
@@ -39,6 +36,12 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_2/ip/design_2_rst_ps7_0_50M_0/sim/design_2_rst_ps7_0_50M_0.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_2/ipshared/6b3d/hdl/arbiter_puf_fpga_v1_0_S00_AXI.v" \
+  "../../../bd/design_2/ipshared/6b3d/hdl/arbiter_puf_fpga_v1_0.v" \
+  "../../../bd/design_2/ip/design_2_arbiter_puf_fpga_0_0/sim/design_2_arbiter_puf_fpga_0_0.v" \
+  "../../../bd/design_2/sim/design_2.v" \
 -endlib
 -makelib ies_lib/generic_baseblocks_v2_1_0 \
   "../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
@@ -63,7 +66,6 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_2/ip/design_2_auto_pc_0/sim/design_2_auto_pc_0.v" \
-  "../../../bd/design_2/sim/design_2.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v
