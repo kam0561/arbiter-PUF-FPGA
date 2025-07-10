@@ -1,7 +1,0 @@
-/*arbiter_puf_fpga*/
-the_ROM_image:
-{
-  [bootloader]<arbiter_puf_fpga/boot/fsbl.elf>
-   <bitstream> 
-  <elf,ps7_cortexa9_0>
-}
