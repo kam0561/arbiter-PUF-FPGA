@@ -1,0 +1,42 @@
+15:58:38 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\AB\xilinxvivado\projects\arbiter-PUF-FPGA\vitis_workspace\temp_xsdb_launch_script.tcl
+15:58:38 INFO  : Registering command handlers for Vitis TCF services
+15:58:40 INFO  : XSCT server has started successfully.
+15:58:40 INFO  : Successfully done setting XSCT server connection channel  
+15:58:40 INFO  : plnx-install-location is set to ''
+15:58:40 INFO  : Successfully done setting workspace for the tool. 
+15:58:40 INFO  : Successfully done query RDI_DATADIR 
+15:58:40 INFO  : Platform repository initialization has completed.
+15:59:16 INFO  : Result from executing command 'getProjects': arbiter_puf_platform
+15:59:16 INFO  : Result from executing command 'getPlatforms': 
+16:00:32 ERROR : Error occurred while generating bsp sources for the domain 'zynq_fsbl'.
+16:00:43 ERROR : (XSDB Server)rm: cannot lstat `*.o': Invalid argument
+
+16:00:43 ERROR : (XSDB Server)make: *** [Makefile:42: clean] Error 1
+
+16:02:42 INFO  : No changes in MSS file content so sources will not be generated.
+16:20:53 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\AB\xilinxvivado\projects\arbiter-PUF-FPGA\vitis_workspace\temp_xsdb_launch_script.tcl
+16:20:55 INFO  : XSCT server has started successfully.
+16:20:55 INFO  : plnx-install-location is set to ''
+16:20:55 INFO  : Successfully done setting XSCT server connection channel  
+16:20:55 INFO  : Successfully done setting workspace for the tool. 
+16:20:55 INFO  : Registering command handlers for Vitis TCF services
+16:20:55 INFO  : Successfully done query RDI_DATADIR 
+16:20:57 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+16:20:57 INFO  : Platform repository initialization has completed.
+16:28:30 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\AB\xilinxvivado\projects\arbiter-PUF-FPGA\vitis_workspace\temp_xsdb_launch_script.tcl
+16:28:32 INFO  : XSCT server has started successfully.
+16:28:32 INFO  : plnx-install-location is set to ''
+16:28:32 INFO  : Successfully done setting XSCT server connection channel  
+16:28:32 INFO  : Successfully done setting workspace for the tool. 
+16:28:32 INFO  : Registering command handlers for Vitis TCF services
+16:28:32 INFO  : Successfully done query RDI_DATADIR 
+16:28:35 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+16:28:35 INFO  : Platform repository initialization has completed.
+16:33:30 INFO  : Result from executing command 'getProjects': arbiter_puf_platform
+16:33:30 INFO  : Result from executing command 'getPlatforms': 

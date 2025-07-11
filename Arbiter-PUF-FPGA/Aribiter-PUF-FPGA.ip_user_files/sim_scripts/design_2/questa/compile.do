@@ -7,13 +7,13 @@ vlib questa_lib/msim/axi_infrastructure_v1_1_0
 vlib questa_lib/msim/axi_vip_v1_1_8
 vlib questa_lib/msim/processing_system7_vip_v1_0_10
 vlib questa_lib/msim/xil_defaultlib
-vlib questa_lib/msim/lib_cdc_v1_0_2
-vlib questa_lib/msim/proc_sys_reset_v5_0_13
 vlib questa_lib/msim/generic_baseblocks_v2_1_0
 vlib questa_lib/msim/fifo_generator_v13_2_5
 vlib questa_lib/msim/axi_data_fifo_v2_1_21
 vlib questa_lib/msim/axi_register_slice_v2_1_22
 vlib questa_lib/msim/axi_protocol_converter_v2_1_22
+vlib questa_lib/msim/lib_cdc_v1_0_2
+vlib questa_lib/msim/proc_sys_reset_v5_0_13
 
 vmap xilinx_vip questa_lib/msim/xilinx_vip
 vmap xpm questa_lib/msim/xpm
@@ -21,13 +21,13 @@ vmap axi_infrastructure_v1_1_0 questa_lib/msim/axi_infrastructure_v1_1_0
 vmap axi_vip_v1_1_8 questa_lib/msim/axi_vip_v1_1_8
 vmap processing_system7_vip_v1_0_10 questa_lib/msim/processing_system7_vip_v1_0_10
 vmap xil_defaultlib questa_lib/msim/xil_defaultlib
-vmap lib_cdc_v1_0_2 questa_lib/msim/lib_cdc_v1_0_2
-vmap proc_sys_reset_v5_0_13 questa_lib/msim/proc_sys_reset_v5_0_13
 vmap generic_baseblocks_v2_1_0 questa_lib/msim/generic_baseblocks_v2_1_0
 vmap fifo_generator_v13_2_5 questa_lib/msim/fifo_generator_v13_2_5
 vmap axi_data_fifo_v2_1_21 questa_lib/msim/axi_data_fifo_v2_1_21
 vmap axi_register_slice_v2_1_22 questa_lib/msim/axi_register_slice_v2_1_22
 vmap axi_protocol_converter_v2_1_22 questa_lib/msim/axi_protocol_converter_v2_1_22
+vmap lib_cdc_v1_0_2 questa_lib/msim/lib_cdc_v1_0_2
+vmap proc_sys_reset_v5_0_13 questa_lib/msim/proc_sys_reset_v5_0_13
 
 vlog -work xilinx_vip  -sv -L axi_vip_v1_1_8 -L processing_system7_vip_v1_0_10 -L xilinx_vip "+incdir+C:/AB/xilinxvivado/Vivado/2020.2/data/xilinx_vip/include" \
 "C:/AB/xilinxvivado/Vivado/2020.2/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
@@ -59,21 +59,6 @@ vlog -work processing_system7_vip_v1_0_10  -sv -L axi_vip_v1_1_8 -L processing_s
 vlog -work xil_defaultlib  "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/34f8/hdl" "+incdir+C:/AB/xilinxvivado/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../bd/design_2/ip/design_2_processing_system7_0_0/sim/design_2_processing_system7_0_0.v" \
 
-vcom -work lib_cdc_v1_0_2  -93 \
-"../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
-
-vcom -work proc_sys_reset_v5_0_13  -93 \
-"../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
-
-vcom -work xil_defaultlib  -93 \
-"../../../bd/design_2/ip/design_2_rst_ps7_0_50M_0/sim/design_2_rst_ps7_0_50M_0.vhd" \
-
-vlog -work xil_defaultlib  "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/34f8/hdl" "+incdir+C:/AB/xilinxvivado/Vivado/2020.2/data/xilinx_vip/include" \
-"../../../bd/design_2/ipshared/6b3d/hdl/arbiter_puf_fpga_v1_0_S00_AXI.v" \
-"../../../bd/design_2/ipshared/6b3d/hdl/arbiter_puf_fpga_v1_0.v" \
-"../../../bd/design_2/ip/design_2_arbiter_puf_fpga_0_0/sim/design_2_arbiter_puf_fpga_0_0.v" \
-"../../../bd/design_2/sim/design_2.v" \
-
 vlog -work generic_baseblocks_v2_1_0  "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/34f8/hdl" "+incdir+C:/AB/xilinxvivado/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
 
@@ -97,6 +82,21 @@ vlog -work axi_protocol_converter_v2_1_22  "+incdir+../../../../Aribiter-PUF-FPG
 
 vlog -work xil_defaultlib  "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/34f8/hdl" "+incdir+C:/AB/xilinxvivado/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../bd/design_2/ip/design_2_auto_pc_0/sim/design_2_auto_pc_0.v" \
+
+vcom -work lib_cdc_v1_0_2  -93 \
+"../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
+
+vcom -work proc_sys_reset_v5_0_13  -93 \
+"../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib  -93 \
+"../../../bd/design_2/ip/design_2_rst_ps7_0_50M_0/sim/design_2_rst_ps7_0_50M_0.vhd" \
+
+vlog -work xil_defaultlib  "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/ec67/hdl" "+incdir+../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/34f8/hdl" "+incdir+C:/AB/xilinxvivado/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../bd/design_2/ipshared/6b3d/hdl/arbiter_puf_fpga_v1_0_S00_AXI.v" \
+"../../../bd/design_2/ipshared/6b3d/hdl/arbiter_puf_fpga_v1_0.v" \
+"../../../bd/design_2/ip/design_2_arbiter_puf_fpga_0_0/sim/design_2_arbiter_puf_fpga_0_0.v" \
+"../../../bd/design_2/sim/design_2.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

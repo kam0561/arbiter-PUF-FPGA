@@ -1,0 +1,7 @@
+Running: xsim.dir/arbiter_puf_behav/xsimk.exe -simmode gui -wdb arbiter_puf_behav.wdb -simrunnum 0 -socket 56174
+Design successfully loaded
+Design Loading Memory Usage: 17164 KB (Peak: 17164 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 21180 KB (Peak: 21180 KB)
+Simulation CPU Usage: 93 ms

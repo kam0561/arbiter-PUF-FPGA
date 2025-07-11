@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/ec67/hdl" --include "../../../../Aribiter-PUF-FPGA.gen/sources_1/bd/design_2/ipshared/34f8/hdl" --include "C:/AB/xilinxvivado/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../Aribiter-PUF-FPGA.srcs/sources_1/new/arbel.v" \
+"../../../../Aribiter-PUF-FPGA.srcs/sources_1/new/arbiter.v" \
+"../../../../Aribiter-PUF-FPGA.srcs/sources_1/new/dff.v" \
+"../../../../Aribiter-PUF-FPGA.srcs/sources_1/new/mux.v" \
+"../../../../Aribiter-PUF-FPGA.srcs/sources_1/new/arbiter_puf.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
