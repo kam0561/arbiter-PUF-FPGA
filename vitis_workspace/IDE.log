@@ -40,3 +40,4 @@ Reason: No Platforms Found.
 16:28:35 INFO  : Platform repository initialization has completed.
 16:33:30 INFO  : Result from executing command 'getProjects': arbiter_puf_platform
 16:33:30 INFO  : Result from executing command 'getPlatforms': 
+16:40:08 INFO  : Checking for BSP changes to sync application flags for project 'puf_test'...

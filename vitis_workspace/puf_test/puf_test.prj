@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="puf_test" location="C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/vitis_workspace/puf_test" platform="C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/vitis_workspace/arbiter_puf_platform/export/arbiter_puf_platform/arbiter_puf_platform.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="puf_test_system" sysConfig="arbiter_puf_platform" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="3226b34b9e7a2abf73bbfcb4e5585451">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1406223921">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1247602410" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
