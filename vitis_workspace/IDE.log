@@ -41,3 +41,21 @@ Reason: No Platforms Found.
 16:33:30 INFO  : Result from executing command 'getProjects': arbiter_puf_platform
 16:33:30 INFO  : Result from executing command 'getPlatforms': 
 16:40:08 INFO  : Checking for BSP changes to sync application flags for project 'puf_test'...
+11:28:01 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\AB\xilinxvivado\projects\arbiter-PUF-FPGA\vitis_workspace\temp_xsdb_launch_script.tcl
+11:28:03 INFO  : XSCT server has started successfully.
+11:28:03 INFO  : Successfully done setting XSCT server connection channel  
+11:28:03 INFO  : plnx-install-location is set to ''
+11:28:03 INFO  : Successfully done setting workspace for the tool. 
+11:28:06 INFO  : Platform repository initialization has completed.
+11:28:06 INFO  : Registering command handlers for Vitis TCF services
+11:28:07 INFO  : Successfully done query RDI_DATADIR 
+11:28:49 INFO  : Hardware specification for platform project 'arbiter_puf_platform' is updated.
+11:29:03 INFO  : Result from executing command 'getProjects': arbiter_puf_platform
+11:29:03 INFO  : Result from executing command 'getPlatforms': arbiter_puf_platform|C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/vitis_workspace/arbiter_puf_platform/export/arbiter_puf_platform/arbiter_puf_platform.xpfm
+11:29:17 INFO  : Checking for BSP changes to sync application flags for project 'puf_test'...
+11:29:25 INFO  : Checking for BSP changes to sync application flags for project 'puf_test'...
+11:29:25 INFO  : The hardware specfication used by project 'puf_test' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+11:29:25 INFO  : The file 'C:\AB\xilinxvivado\projects\arbiter-PUF-FPGA\vitis_workspace\puf_test\_ide\bitstream\design_2_wrapper.bit' stored in project is removed.
+11:29:25 INFO  : The updated bitstream files are copied from platform to folder 'C:\AB\xilinxvivado\projects\arbiter-PUF-FPGA\vitis_workspace\puf_test\_ide\bitstream' in project 'puf_test'.
+11:29:25 INFO  : The file 'C:\AB\xilinxvivado\projects\arbiter-PUF-FPGA\vitis_workspace\puf_test\_ide\psinit\ps7_init.tcl' stored in project is removed.
+11:29:28 INFO  : The updated ps init files are copied from platform to folder 'C:\AB\xilinxvivado\projects\arbiter-PUF-FPGA\vitis_workspace\puf_test\_ide\psinit' in project 'puf_test'.

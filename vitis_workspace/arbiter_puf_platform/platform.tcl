@@ -32,3 +32,6 @@ platform clean
 platform clean
 platform clean
 platform generate
+platform active {arbiter_puf_platform}
+platform config -updatehw {C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/Arbiter-PUF-FPGA/design_2_wrapper_new.xsa}
+platform generate -domains 
