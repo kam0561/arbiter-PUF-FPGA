@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xil_io.h"
+#include "xbasic_types.h"
+
+int main() {
+    u32 data_out;
+    u32 A_data_out;
+    u32 B_data_out;
+    u32 chal3, chal2, chal1, chal0;
+
+    FILE *inputFile = fopen("input.txt", "r");
+    FILE *outputFile = fopen("output.txt", "w");
+
+    if (inputFile == NULL) {
+        xil_printf("Error: Could not open input file.\n");
+        return 1;
+    }
+
+    if (outputFile == NULL) {
+        xil_printf("Error: Could not open output file.\n");
+        fclose(inputFile);
+        return 1;
+    }
+
+    xil_printf("Start of IP PUF 64 bit test\n\n\r");
+
+    // Read challenges from the input file
+    while (fscanf(inputFile, "%x %x %x %x", &chal3, &chal2, &chal1, &chal0) == 4) {
+        // Write the input challenges to the AXI registers
+        Xil_Out32(XPAR_MYIPPUF_32X128_V4_0_S00_AXI_BASEADDR + 0x10, chal3);
+        Xil_Out32(XPAR_MYIPPUF_32X128_V4_0_S00_AXI_BASEADDR + 0xc, chal2);
+        Xil_Out32(XPAR_MYIPPUF_32X128_V4_0_S00_AXI_BASEADDR + 0x8, chal1);
+        Xil_Out32(XPAR_MYIPPUF_32X128_V4_0_S00_AXI_BASEADDR + 0x4, chal0);
+
+        // Reset and activate the PUF system
+        Xil_Out32(XPAR_MYIPARBITER_PUF_V2_0_S00_AXI_BASEADDR, 0x0);
+
+        // Delay
+        for (int i = 0; i < 1000; i++);
+
+        Xil_Out32(XPAR_MYIPARBITER_PUF_V2_0_S00_AXI_BASEADDR, 0x1);
+
+        // Read outputs from the AXI registers
+        A_data_out = Xil_In32(XPAR_MYIPARBITER_PUF_V2_0_S00_AXI_BASEADDR + 0x14);
+        B_data_out = Xil_In32(XPAR_MYIPARBITER_PUF_V2_0_S00_AXI_BASEADDR + 0x18);
+        data_out = Xil_In32(XPAR_MYIPARBITER_PUF_V2_0_S00_AXI_BASEADDR + 0x1c);
+
+        // Print the results
+        xil_printf("Input Challenge Data = %0x %0x %0x %0x; response_data_out= %0x \n\r", chal3, chal2, chal1, chal0, data_out);
+        xil_printf("A_data_out= %0x \n\r", A_data_out);
+        xil_printf("B_data_out= %0x \n\r", B_data_out);
+
+        // Write results to the output file
+        fprintf(outputFile, "Input: %0x %0x %0x %0x, Output: %0x, A_data_out: %0x, B_data_out: %0x\n",
+                chal3, chal2, chal1, chal0, data_out, A_data_out, B_data_out);
+    }
+
+    fclose(inputFile);
+    fclose(outputFile);
+
+    xil_printf("Processing completed. Results saved to output.txt\n");
+
+    return 0;
+}

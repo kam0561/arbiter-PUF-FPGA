@@ -35,3 +35,20 @@ platform generate
 platform active {arbiter_puf_platform}
 platform config -updatehw {C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/Arbiter-PUF-FPGA/design_2_wrapper_new.xsa}
 platform generate -domains 
+platform active {arbiter_puf_platform}
+platform active {arbiter_puf_platform}
+platform generate
+platform generate
+platform active {arbiter_puf_platform}
+platform config -updatehw {C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/Arbiter-PUF-FPGA/design_2_wrapper_final_0.xsa}
+platform generate -domains 
+domain active {standalone_domain}
+bsp reload
+bsp config stdin "ps7_coresight_comp_0"
+bsp config stdout "ps7_coresight_comp_0"
+bsp config stdin "ps7_coresight_comp_0"
+bsp config stdout "ps7_coresight_comp_0"
+bsp reload
+platform active {arbiter_puf_platform}
+platform config -updatehw {C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/Arbiter-PUF-FPGA/design_2_wrapper_final_2.xsa}
+platform config -updatehw {C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/Arbiter-PUF-FPGA/design_2_wrapper_final_0.xsa}

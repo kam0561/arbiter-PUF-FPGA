@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Jul 14 11:20:16 2025
+| Date         : Thu Jul 17 15:42:11 2025
 | Host         : MSI running 64-bit major release  (build 9200)
 | Command      : report_drc -file design_2_wrapper_drc_routed.rpt -pb design_2_wrapper_drc_routed.pb -rpx design_2_wrapper_drc_routed.rpx
 | Design       : design_2_wrapper
@@ -742,20 +742,20 @@ Related violations: <none>
 RTSTAT-10#1 Warning
 No routable loads  
 64 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[11].arbiterinst/d0/z,
-design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[16].arbiterinst/d0/z,
-design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[19].arbiterinst/d0/z,
-design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[20].arbiterinst/d0/z,
-design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[25].arbiterinst/d0/z,
-design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[26].arbiterinst/d0/z,
+design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[14].arbiterinst/d0/z,
+design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[17].arbiterinst/d0/z,
+design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[23].arbiterinst/d0/z,
+design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[27].arbiterinst/d0/z,
 design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[29].arbiterinst/d0/z,
 design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[2].arbiterinst/d0/z,
-design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[32].arbiterinst/d0/z,
+design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[38].arbiterinst/d0/z,
 design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[41].arbiterinst/d0/z,
+design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[42].arbiterinst/d0/z,
+design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[44].arbiterinst/d0/z,
 design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[46].arbiterinst/d0/z,
-design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[50].arbiterinst/d0/z,
-design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[51].arbiterinst/d0/z,
-design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[53].arbiterinst/d0/z,
-design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[61].arbiterinst/d0/z
+design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[58].arbiterinst/d0/z,
+design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[62].arbiterinst/d0/z,
+design_2_i/arbiter_puf_fpga_0/inst/arbiter_puf_fpga_v1_0_S00_AXI_inst/u_puf/genblk1[6].arbiterinst/d0/z
  (the first 15 of 64 listed).
 Related violations: <none>
 

@@ -1,0 +1,21 @@
+# Minimal Makefile for Xilinx BSP (Windows-compatible)
+
+COMPILER = arm-none-eabi-gcc
+ARCHIVER = arm-none-eabi-ar
+
+OBJECTS = arbiter_puf_fpga.o arbiter_puf_fpga_selftest.o
+LIB_OUT = ..\\..\\..\\lib\\libxil.a
+INC_DIR = ..\\..\\..\\include
+
+libs: $(OBJECTS)
+	$(ARCHIVER) -r $(LIB_OUT) $(OBJECTS)
+	rm -f $(OBJECTS)
+
+%.o: %.c
+	$(COMPILER) -O2 -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -I$(INC_DIR) -c $< -o $@
+
+include:
+	cp arbiter_puf_fpga.h $(INC_DIR)
+
+clean:
+	rm -f $(OBJECTS)

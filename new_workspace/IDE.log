@@ -1,0 +1,17 @@
+22:20:04 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\AB\xilinxvivado\projects\arbiter-PUF-FPGA\new_workspace\temp_xsdb_launch_script.tcl
+22:20:04 INFO  : Registering command handlers for Vitis TCF services
+22:20:06 INFO  : XSCT server has started successfully.
+22:20:07 INFO  : Platform repository initialization has completed.
+22:20:07 INFO  : Successfully done setting XSCT server connection channel  
+22:20:07 INFO  : plnx-install-location is set to ''
+22:20:07 INFO  : Successfully done query RDI_DATADIR 
+22:20:07 INFO  : Successfully done setting workspace for the tool. 
+22:20:35 INFO  : Result from executing command 'getProjects': platform
+22:20:35 INFO  : Result from executing command 'getPlatforms': 
+22:40:30 INFO  : Result from executing command 'getProjects': platform
+22:40:30 INFO  : Result from executing command 'getPlatforms': platform|C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/new_workspace/platform/export/platform/platform.xpfm
+22:55:17 INFO  : Checking for BSP changes to sync application flags for project 'test'...
+22:55:31 INFO  : Checking for BSP changes to sync application flags for project 'test'...
+22:58:19 INFO  : Result from executing command 'getProjects': platform
+22:58:19 INFO  : Result from executing command 'getPlatforms': platform|C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/new_workspace/platform/export/platform/platform.xpfm
+22:58:19 INFO  : Checking for BSP changes to sync application flags for project 'test'...

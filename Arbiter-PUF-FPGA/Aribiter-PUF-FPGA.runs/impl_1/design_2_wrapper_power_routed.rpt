@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Mon Jul 14 11:20:18 2025
+| Date             : Thu Jul 17 15:42:12 2025
 | Host             : MSI running 64-bit major release  (build 9200)
 | Command          : report_power -file design_2_wrapper_power_routed.rpt -pb design_2_wrapper_power_summary_routed.pb -rpx design_2_wrapper_power_routed.rpx
 | Design           : design_2_wrapper
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.662        |
+| Total On-Chip Power (W)  | 1.665        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.526        |
-| Device Static (W)        | 0.136        |
+| Dynamic (W)              | 1.527        |
+| Device Static (W)        | 0.137        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 65.8         |
 | Junction Temperature (C) | 44.2         |
@@ -59,9 +59,9 @@ Table of Contents
 |   Others                |     0.000 |      300 |       --- |             --- |
 |   LUT as Shift Register |     0.000 |       22 |     17400 |            0.13 |
 | Signals                 |    <0.001 |     4377 |       --- |             --- |
-| PS7                     |     1.525 |        1 |       --- |             --- |
-| Static Power            |     0.136 |          |           |                 |
-| Total                   |     1.662 |          |           |                 |
+| PS7                     |     1.526 |        1 |       --- |             --- |
+| Static Power            |     0.137 |          |           |                 |
+| Total                   |     1.665 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -85,11 +85,11 @@ Table of Contents
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccpint   |       1.000 |     0.752 |       0.722 |      0.030 |       NA    | Unspecified | NA         |
-| Vccpaux   |       1.800 |     0.060 |       0.050 |      0.010 |       NA    | Unspecified | NA         |
+| Vccpaux   |       1.800 |     0.061 |       0.050 |      0.010 |       NA    | Unspecified | NA         |
 | Vccpll    |       1.800 |     0.018 |       0.015 |      0.003 |       NA    | Unspecified | NA         |
 | Vcco_ddr  |       1.500 |     0.459 |       0.457 |      0.002 |       NA    | Unspecified | NA         |
 | Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco_mio1 |       1.800 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 
@@ -147,10 +147,10 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| design_2_wrapper         |     1.526 |
-|   design_2_i             |     1.526 |
-|     processing_system7_0 |     1.525 |
-|       inst               |     1.525 |
+| design_2_wrapper         |     1.527 |
+|   design_2_i             |     1.527 |
+|     processing_system7_0 |     1.526 |
+|       inst               |     1.526 |
 +--------------------------+-----------+
 
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="test" location="C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/new_workspace/test" platform="C:/AB/xilinxvivado/projects/arbiter-PUF-FPGA/new_workspace/platform/export/platform/platform.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="test_system" sysConfig="platform" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="b10ea2c9b64ad83c8bc1e05abacb6ac0">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.869039989">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.2000556276" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
